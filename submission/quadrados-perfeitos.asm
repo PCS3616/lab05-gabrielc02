@@ -25,12 +25,13 @@
         LD i
         AD bit_1
         MM i
-        AD bit_1 ; garante o n-1
-        SB n
 
         ;verifica se esse loop ja chegou ao fim
-        JN /F00 ; volta ao inicio loops
+        LD n
+        SB bit_1
+        SB i
         JZ /F1A ; fim
+        JP /F02 ; volta ao inicio loops
         
         @ /F1A
         RS /F00 ; finaliza a subrotina
