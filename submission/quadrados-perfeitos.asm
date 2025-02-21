@@ -29,8 +29,8 @@
         SB n
 
         ;verifica se esse loop ja chegou ao fim
-        JN F00 ; volta ao inicio loops
-        JZ F1A; fim
+        JN F02 ; volta ao inicio loops
+        JZ F1A ; fim
         
         @ /F1A
         RS F00 ; finaliza a subrotina
