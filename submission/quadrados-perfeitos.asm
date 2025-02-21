@@ -6,7 +6,8 @@
 
         ;inicio do loop
         @ /F00
-        
+
+        @ /F02
         ;calcula o endereco de salvamento
         LV /0002
         ML i
@@ -30,10 +31,10 @@
         LD n
         SB bit_1
         SB i
-        JZ /F1A ; fim
-        JP /F00 ; volta ao inicio loops
+        JZ /FF0 ; fim
+        JP /F02 ; volta ao inicio loops
         
-        @ /F1A
+        @ /FF0
         RS /F00 ; finaliza a subrotina
 
         @ /F20 ; Variaveis
