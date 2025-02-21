@@ -31,7 +31,7 @@
         SB bit_1
         SB i
         JZ /F1A ; fim
-        JP /F02 ; volta ao inicio loops
+        JP /F00 ; volta ao inicio loops
         
         @ /F1A
         RS /F00 ; finaliza a subrotina
