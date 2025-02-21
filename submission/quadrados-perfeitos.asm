@@ -29,11 +29,11 @@
         SB n
 
         ;verifica se esse loop ja chegou ao fim
-        JN F02 ; volta ao inicio loops
-        JZ F1A ; fim
+        JN /F00 ; volta ao inicio loops
+        JZ /F1A ; fim
         
         @ /F1A
-        RS F00 ; finaliza a subrotina
+        RS /F00 ; finaliza a subrotina
 
         @ /F20 ; Variaveis
 bit_1   k /0001
