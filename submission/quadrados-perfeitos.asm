@@ -41,7 +41,7 @@
         @ /FF0 ; Variaveis
 bit_1   k /0001
 i       k /0000
-n       k /003E 
+n       k /003F 
 sum     k /0000
 addr    k /9100
 	JP /FB6       
