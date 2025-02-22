@@ -1,7 +1,7 @@
 ;salva o numero
-GD /0000
+GD /000
 MM /FF0
-GD /0000
+GD /000
 MM /FF2
 SC /F00
 HM /0000
@@ -30,7 +30,7 @@ MM /F38
 LD /F36
 SB /F38
 MM /F3C
-LV /000A
+LV /A
 SB /F3C
 JN /FA0 
 JZ /FA0
@@ -41,7 +41,7 @@ PD /100
 RS /F00 
 
 @ /FA0
-LV /000A
+LV /A
 MM /FCC
 LV /0100
 MM /FCE
