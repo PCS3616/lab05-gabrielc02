@@ -10,7 +10,6 @@
 	@ /F02
         ;calcula o endereco de salvamento
         LV /0002
-        ML i
         AD addr
         MM addr
 
