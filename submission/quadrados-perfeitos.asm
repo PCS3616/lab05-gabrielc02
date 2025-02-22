@@ -32,7 +32,6 @@
         ;verifica se esse loop ja chegou ao fim
         LD n
         SB i
-        SB bit_1
         JZ /FE0 ; fim
         JP /F02 ; volta ao inicio loops
         
@@ -42,7 +41,7 @@
         @ /FF0 ; Variaveis
 bit_1   k /0001
 i       k /0000
-n       k /003F 
+n       k /003E 
 sum     k /0000
 addr    k /9100
 	JP /FB6       
