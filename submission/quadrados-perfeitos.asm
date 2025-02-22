@@ -6,8 +6,8 @@
 
         ;inicio do loop
         @ /F00
-
-        @ /F02
+        
+	@ /F02
         ;calcula o endereco de salvamento
         LV /0002
         ML i
@@ -20,8 +20,11 @@
         AD bit_1
         AD sum
         MM sum ; atualiza o somador
-        MM addr ; comeca a salvar no addr
-
+        
+	;salva na posicao desejada
+	JP /FF8	
+	
+	@ /FB6
         ;atualiza i
         LD i
         AD bit_1
@@ -29,17 +32,18 @@
 
         ;verifica se esse loop ja chegou ao fim
         LD n
-        SB bit_1
         SB i
-        JZ /FF0 ; fim
+        SB bit_1
+        JZ /FE0 ; fim
         JP /F02 ; volta ao inicio loops
         
-        @ /FF0
+        @ /FE0
         RS /F00 ; finaliza a subrotina
 
-        @ /F20 ; Variaveis
+        @ /FF0 ; Variaveis
 bit_1   k /0001
 i       k /0000
 n       k /003F 
 sum     k /0000
-addr    k /0102       
+addr    k /9102
+	JP /FB6       
